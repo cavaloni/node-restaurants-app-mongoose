@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: D4k8SkANNFEluv4u6WF7gUfDIo9Wl9dnphuwXiR7772PtA8TTNNui4R2swDYV4dAOQa3gwjkZk6pPiw4oAcn42jDXx5r8l9t15+KrpabDB0fDG2w/WRbZWOyfWabHWt6inIflM0vX82vck3+dQpUnRIVss6wD5Grgp+cDDJ8JULws2P5NcOAfBFGhITrJlSCIUXzVZia7oNsQS5i8pYxUhc711s6E7+BOuxmh/QbTLpdkk2WMqY8zUHpnz36AY8dorlMMYNE5UpE5RnnL8KQ4dIwtQrj2crEiJHAEjhJFW3BkA3GERsWTuS3NNY8fpjs/SsUG0xKJotAsXVwRCFTBbvM/z1TQRy4YdbieR0MZNrtwJdaKcczUqRqDwVGl9y9gp+fnPh74x2lBgEGYMLmnDpfI3hJ8dinc3R6y/hfwGNnH9C3nNLWqpis3Xgfyq+7+VXUYX7FNkSncD9xRmRKVHKMKcrB+INPIhjMDI4IOFgWOgYpklWhv/MDWeNj/VcgxuQUehQvPYB3oBl49qSxKr+DnuYuxMcVJwBkcLb8gC9Svz8PaiYMqLMzJmUBQQY5FaLS/SKYRAiUU2AiXZfb4Q//rlOV8XhardaKfPElScAHItR6Bn1jWXRhy/9cBFdS5t04yUOEUiUw4xqmtd1FDEA8XARMyjyHrVBXVrS31E8=
+  app: node-restaurants-app-mongoose
+  on:
+    repo: cavaloni/node-restaurants-app-mongoose
+    branch: feature/with-tests
